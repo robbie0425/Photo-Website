@@ -38,6 +38,7 @@ function loadJSONData() {
 function renderData(data) {
     document.querySelector('title').innerHTML = data.公司名稱;
     document.querySelector('header .logo').innerHTML = data.公司名稱;
+    document.querySelector('link#logo').href = data.商標;
 
     document.querySelector('section#home h1').innerHTML = data.標語;
     document.querySelector('section#home p').innerHTML = data.副標語;
